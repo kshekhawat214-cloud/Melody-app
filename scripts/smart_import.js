@@ -223,6 +223,16 @@ async function smartImport(playlistUrl) {
                         log("⚠️  Rate limit or blocking detected!");
                     }
 
+                    if (output.includes('LookupError') || output.includes('No results found')) {
+                        limitDetected = true; // Treat as failure to force switch
+                        log("⚠️  Song not found on this provider. Switching...");
+                    }
+
+                    if (output.includes('LookupError') || output.includes('No results found')) {
+                        limitDetected = true;
+                        log("⚠️  Song not found on this provider. Marking as failed to try next.");
+                    }
+
                     if (output.includes('Downloaded')) {
                         currentProgress++;
                         updateStatus('downloading', `Downloading...`, currentProgress, totalTracks, addedCount, skippedCount);
