@@ -324,3 +324,33 @@ Error: EBADF: bad file descriptor, write
     at log (A:\projects\spotify\scripts\smart_import.js:30:13)
     at smartImport (A:\projects\spotify\scripts\smart_import.js:151:13)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-12-05T21:21:59.562Z] 🚀 Starting Smart Import System...
+[2025-12-05T21:21:59.570Z] 📊 Loading playlist metadata...
+[2025-12-05T21:22:20.543Z]    Found 1 tracks in playlist.
+[2025-12-05T21:22:20.544Z] 🔍 Checking database for duplicates...
+[2025-12-05T21:22:21.582Z]    0 songs already exist.
+[2025-12-05T21:22:21.584Z]    1 new songs to download.
+[2025-12-05T21:22:21.586Z] ⬇️  Downloading new songs...
+[2025-12-05T21:22:21.587Z] 👉 Trying strategy: Primary (YouTube Music)
+[2025-12-05T21:22:21.588Z] Running command: python3 -m spotdl "A:\projects\spotify\downloads\to_download.spotdl" --format mp3 --audio youtube-music
+[2025-12-05T21:22:22.228Z] STDERR: 'python3' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2025-12-05T21:22:22.232Z] ⚠️  Strategy Primary (YouTube Music) failed or limited (Exit: 1).
+[2025-12-05T21:22:22.233Z] 🔄 Switching to next strategy...
+[2025-12-05T21:22:24.237Z] 👉 Trying strategy: Fallback (SoundCloud)
+[2025-12-05T21:22:24.239Z] Running command: python3 -m spotdl "A:\projects\spotify\downloads\to_download.spotdl" --format mp3 --audio soundcloud
+[2025-12-05T21:22:24.835Z] STDERR: 'python3' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2025-12-05T21:22:24.841Z] ⚠️  Strategy Fallback (SoundCloud) failed or limited (Exit: 1).
+[2025-12-05T21:22:24.842Z] 🔄 Switching to next strategy...
+[2025-12-05T21:22:26.844Z] 👉 Trying strategy: Last Resort (YouTube)
+[2025-12-05T21:22:26.845Z] Running command: python3 -m spotdl "A:\projects\spotify\downloads\to_download.spotdl" --format mp3 --audio youtube
+[2025-12-05T21:22:27.452Z] STDERR: 'python3' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2025-12-05T21:22:27.459Z] ⚠️  Strategy Last Resort (YouTube) failed or limited (Exit: 1).
+[2025-12-05T21:22:27.459Z] 🔄 Switching to next strategy...
+[2025-12-05T21:22:29.470Z] ☁️  Processing downloads (Upload & Import)...
+[2025-12-05T21:22:29.470Z] 🎉 Smart Import Complete! Added 0 new songs.

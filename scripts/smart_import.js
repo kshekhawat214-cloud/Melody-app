@@ -187,8 +187,12 @@ async function smartImport(playlistUrl) {
             updateStatus('downloading', `Downloading with ${strategy.name}...`, currentProgress, totalTracks, addedCount, skippedCount);
 
             let targetArgForCmd = isFileTarget ? `"${downloadTarget}"` : `"${downloadTarget}"`;
-            // Use python3 -m spotdl to ensure we use the installed module even if bin is not in PATH
-            const downloadCmd = `python3 -m spotdl ${targetArgForCmd} --format mp3 --audio ${strategy.providers}`;
+
+            // Detect platform to choose correct python command
+            // Windows usually uses 'python', Linux/Docker uses 'python3'
+            const pythonCmd = process.platform === 'win32' ? 'python' : 'python3';
+
+            const downloadCmd = `${pythonCmd} -m spotdl ${targetArgForCmd} --format mp3 --audio ${strategy.providers}`;
             log(`Running command: ${downloadCmd}`);
 
             let limitDetected = false;
