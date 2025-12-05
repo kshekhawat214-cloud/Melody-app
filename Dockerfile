@@ -22,8 +22,8 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Install spotdl and yt-dlp (latest versions)
-RUN pip3 install --upgrade spotdl yt-dlp
+# 2. Install spotdl and yt-dlp (latest versions) with PEP 668 override for Docker
+RUN pip3 install --upgrade spotdl yt-dlp --break-system-packages
 
 # 3. Set Working Directory
 WORKDIR /app
