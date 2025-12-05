@@ -228,9 +228,9 @@ async function smartImport(playlistUrl) {
                         log("⚠️  Song not found on this provider. Switching...");
                     }
 
-                    if (output.includes('LookupError') || output.includes('No results found')) {
+                    if (output.includes('LookupError') || output.includes('No results found') || output.includes('AudioProviderError') || output.includes('download error')) {
                         limitDetected = true;
-                        log("⚠️  Song not found on this provider. Marking as failed to try next.");
+                        log("⚠️  Download failed (Error detected). Marking as failed to try next.");
                     }
 
                     if (output.includes('Downloaded')) {
