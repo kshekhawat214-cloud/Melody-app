@@ -174,8 +174,8 @@ async function smartImport(playlistUrl) {
         log("⬇️  Downloading new songs...");
 
         const strategies = [
-            { name: 'Primary (YouTube Music)', providers: 'youtube-music' },
-            { name: 'Fallback (SoundCloud)', providers: 'soundcloud' },
+            { name: 'Primary (SoundCloud)', providers: 'soundcloud' },
+            { name: 'Secondary (YouTube Music)', providers: 'youtube-music' },
             { name: 'Last Resort (YouTube)', providers: 'youtube' }
         ];
 

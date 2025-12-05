@@ -22,8 +22,8 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Install spotdl via pip
-RUN pip3 install spotdl
+# 2. Install spotdl and yt-dlp (latest versions)
+RUN pip3 install --upgrade spotdl yt-dlp
 
 # 3. Set Working Directory
 WORKDIR /app
