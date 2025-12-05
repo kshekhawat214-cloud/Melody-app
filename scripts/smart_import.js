@@ -183,7 +183,8 @@ async function smartImport(playlistUrl) {
             updateStatus('downloading', `Downloading with ${strategy.name}...`, currentProgress, totalTracks, addedCount, skippedCount);
 
             let targetArgForCmd = isFileTarget ? `"${downloadTarget}"` : `"${downloadTarget}"`;
-            const downloadCmd = `spotdl ${targetArgForCmd} --format mp3 --audio ${strategy.providers}`;
+            // Use python3 -m spotdl to ensure we use the installed module even if bin is not in PATH
+            const downloadCmd = `python3 -m spotdl ${targetArgForCmd} --format mp3 --audio ${strategy.providers}`;
             log(`Running command: ${downloadCmd}`);
 
             let limitDetected = false;
