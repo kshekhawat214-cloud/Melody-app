@@ -1,9 +1,9 @@
 {
   "state": "completed",
-  "message": "Import Complete! Added 39 new songs (Skipped 27 duplicates).",
+  "message": "Import Complete! Added 1 new songs.",
   "progress": 100,
   "total": 100,
-  "addedCount": 39,
-  "skippedCount": 27,
-  "timestamp": 1764954223337
+  "addedCount": 1,
+  "skippedCount": 0,
+  "timestamp": 1764967696048
 }
