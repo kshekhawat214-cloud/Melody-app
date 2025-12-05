@@ -101,7 +101,27 @@ export function PlayerProvider({ children }) {
                 fetchLikedSongs(user.id);
             }
         };
+
+        const { data: authListener } = supabase.auth.onAuthStateChange(async (event, session) => {
+            console.log("Auth State Changed:", event);
+            if (event === 'SIGNED_IN' && session?.user) {
+                setUser(session.user);
+                fetchPlaylists(session.user.id);
+                fetchFollowedArtists(session.user.id);
+                fetchLikedSongs(session.user.id);
+            } else if (event === 'SIGNED_OUT') {
+                setUser(null);
+                setPlaylists([]);
+                setLikedSongs([]);
+                setFollowedArtists([]);
+            }
+        });
+
         initUser();
+
+        return () => {
+            authListener.subscription.unsubscribe();
+        };
     }, []);
 
     const fetchLikedSongs = async (userId) => {
