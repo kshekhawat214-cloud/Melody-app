@@ -19,12 +19,8 @@ export async function POST(request) {
         // Spawn the Node.js process
         const nodeProcess = spawn('node', [scriptPath, url], {
             cwd: process.cwd(),
-            stdio: 'inherit', // Changed to inherit to see logs in Render Dashboard
+            stdio: 'ignore', // Must be 'ignore' for detached processes to allow parent to exit/close
             detached: true
-        });
-
-        nodeProcess.on('error', (err) => {
-            console.error('Failed to spawn background script:', err);
         });
 
         nodeProcess.unref();

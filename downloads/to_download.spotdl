@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Just the Way You Are",
+    "artists": [
+      "Bruno Mars"
+    ],
+    "artist": "Bruno Mars",
+    "genres": [],
+    "disc_number": 1,
+    "disc_count": 1,
+    "album_name": "Doo-Wops & Hooligans",
+    "album_artist": "Bruno Mars",
+    "duration": 220,
+    "year": 2010,
+    "date": "2010-05-11",
+    "track_number": 2,
+    "tracks_count": 10,
+    "song_id": "7BqBn9nzAq8spo5e7cZ0dJ",
+    "explicit": false,
+    "publisher": "Atlantic Records",
+    "url": "https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ",
+    "isrc": "USAT21001269",
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b273f6b55ca93bd33211227b502b",
+    "copyright_text": "© 2010 Atlantic Recording Corporation For the United States and WEA International Inc. for the world outside of the United States.",
+    "download_url": null,
+    "lyrics": null,
+    "popularity": 85,
+    "album_id": "1uyf3l2d4XYwiEqAb7t7fX",
+    "list_name": null,
+    "list_url": null,
+    "list_position": null,
+    "list_length": null,
+    "artist_id": "0du5cEVh5yTK9QJze8zA0C",
+    "album_type": "album"
+  }
+]

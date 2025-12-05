@@ -1,9 +1,9 @@
 {
-  "state": "completed",
-  "message": "Import Complete! Added 1 new songs.",
-  "progress": 100,
-  "total": 100,
-  "addedCount": 1,
+  "state": "error",
+  "message": "Critical script error occurred.",
+  "progress": 0,
+  "total": 0,
+  "addedCount": 0,
   "skippedCount": 0,
-  "timestamp": 1764967696048
+  "timestamp": 1764969060790
 }

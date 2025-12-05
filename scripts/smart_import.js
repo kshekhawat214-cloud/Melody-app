@@ -27,7 +27,11 @@ const LOG_FILE = path.join(__dirname, '../songsdata/debug_log.txt');
 function log(message) {
     const timestamp = new Date().toISOString();
     const logMessage = `[${timestamp}] ${message}\n`;
-    console.log(message);
+    try {
+        console.log(message);
+    } catch (e) {
+        // Build environment might close stdout
+    }
     try {
         fs.appendFileSync(LOG_FILE, logMessage);
     } catch (e) {

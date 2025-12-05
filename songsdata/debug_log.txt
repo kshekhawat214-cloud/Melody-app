@@ -282,3 +282,45 @@ https://music.youtube.com/watch?v=3zh9Wb1KuW8
 [2025-12-05T20:48:11.582Z] ☁️  Processing downloads (Upload & Import)...
 [2025-12-05T20:48:11.602Z]    Processing: Sia - Snowman.mp3
 [2025-12-05T20:48:16.048Z] 🎉 Smart Import Complete! Added 1 new songs.
+[2025-12-05T21:10:02.920Z] 🚀 Starting Smart Import System...
+[2025-12-05T21:10:02.926Z] 📊 Loading playlist metadata...
+[2025-12-05T21:10:26.100Z]    Found 1 tracks in playlist.
+[2025-12-05T21:10:26.102Z] 🔍 Checking database for duplicates...
+[2025-12-05T21:10:27.320Z]    0 songs already exist.
+[2025-12-05T21:10:27.321Z]    1 new songs to download.
+[2025-12-05T21:10:27.327Z] ⬇️  Downloading new songs...
+[2025-12-05T21:10:27.327Z] 👉 Trying strategy: Primary (YouTube Music)
+[2025-12-05T21:10:27.329Z] Running command: python3 -m spotdl "A:\projects\spotify\downloads\to_download.spotdl" --format mp3 --audio youtube-music
+[2025-12-05T21:10:27.360Z] CRITICAL ERROR: EBADF: bad file descriptor, write
+Error: EBADF: bad file descriptor, write
+    at writeSync (node:fs:924:3)
+    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at console.value (node:internal/console/constructor:298:16)
+    at console.log (node:internal/console/constructor:384:26)
+    at log (A:\projects\spotify\scripts\smart_import.js:30:13)
+    at smartImport (A:\projects\spotify\scripts\smart_import.js:151:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-12-05T21:10:36.419Z] 🚀 Starting Smart Import System...
+[2025-12-05T21:10:36.424Z] 📊 Loading playlist metadata...
+[2025-12-05T21:10:59.458Z]    Found 1 tracks in playlist.
+[2025-12-05T21:10:59.459Z] 🔍 Checking database for duplicates...
+[2025-12-05T21:11:00.739Z]    0 songs already exist.
+[2025-12-05T21:11:00.741Z]    1 new songs to download.
+[2025-12-05T21:11:00.746Z] ⬇️  Downloading new songs...
+[2025-12-05T21:11:00.748Z] 👉 Trying strategy: Primary (YouTube Music)
+[2025-12-05T21:11:00.753Z] Running command: python3 -m spotdl "A:\projects\spotify\downloads\to_download.spotdl" --format mp3 --audio youtube-music
+[2025-12-05T21:11:00.787Z] CRITICAL ERROR: EBADF: bad file descriptor, write
+Error: EBADF: bad file descriptor, write
+    at writeSync (node:fs:924:3)
+    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at console.value (node:internal/console/constructor:298:16)
+    at console.log (node:internal/console/constructor:384:26)
+    at log (A:\projects\spotify\scripts\smart_import.js:30:13)
+    at smartImport (A:\projects\spotify\scripts\smart_import.js:151:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
