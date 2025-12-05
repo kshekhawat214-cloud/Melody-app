@@ -17,9 +17,9 @@ echo.
 echo ========================================================
 echo CRITICAL STEP:
 echo 1. Go to https://github.com/new
-echo 2. Name your repository "melody-app" (or similar)
+echo 2. Name your repository "Melody-app" (or similar)
 echo 3. Click "Create repository"
-echo 4. Copy the HTTPS URL (e.g., https://github.com/kshekhawat214-cloud/melody-app.git)
+echo 4. Copy the HTTPS URL (e.g., https://github.com/kshekhawat214-cloud/Melody-app.git)
 echo.
 echo Then run this command:
 echo git remote add origin [YOUR_URL]

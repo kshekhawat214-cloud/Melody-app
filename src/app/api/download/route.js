@@ -10,8 +10,11 @@ export async function POST(request) {
             return NextResponse.json({ error: 'URL is required' }, { status: 400 });
         }
 
-        // Path to the Node.js script
-        const scriptPath = path.join(process.cwd(), 'scripts', 'smart_import.js');
+        // Path to the Node.js script (Base64 encoded to be invisible to Webpack/Turbopack static analysis)
+        // Decodes to "scripts/smart_import.js"
+        const scriptRel = Buffer.from('c2NyaXB0cy9zbWFydF9pbXBvcnQuanM=', 'base64').toString('utf-8');
+        // Use relative path directly, rely on spawn's cwd
+        const scriptPath = scriptRel;
 
         // Spawn the Node.js process
         const nodeProcess = spawn('node', [scriptPath, url], {
