@@ -216,10 +216,7 @@ async function smartImport(playlistUrl) {
                     }, 300000);
 
                     const output = data.toString();
-                    // Only log important lines to avoid spamming debug log
-                    if (output.includes('Downloading') || output.includes('Downloaded')) {
-                        log(output.trim());
-                    }
+                    log(output.trim()); // Log EVERYTHING to catch the error message
 
                     if (output.includes('429') || output.includes('Too Many Requests') || output.includes('rate limit') || output.includes('Sign in')) {
                         limitDetected = true;
@@ -230,6 +227,7 @@ async function smartImport(playlistUrl) {
                         currentProgress++;
                         updateStatus('downloading', `Downloading...`, currentProgress, totalTracks, addedCount, skippedCount);
                     } else if (output.includes('Downloading')) {
+                        // Update status logic...
                         const lines = output.split('\n');
                         for (const line of lines) {
                             if (line.trim().length > 0 && line.includes('Downloading')) {
