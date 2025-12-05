@@ -1,0 +1,255 @@
+[2025-12-05T16:30:03.526Z] 🚀 Starting Smart Import System...
+[2025-12-05T16:30:03.533Z] 📊 Loading playlist metadata...
+[2025-12-05T16:30:20.982Z] ⚠️  Could not fetch metadata. Proceeding with direct playlist download.
+[2025-12-05T16:30:20.982Z] ⬇️  Downloading new songs...
+[2025-12-05T16:30:20.983Z] 👉 Trying strategy: Primary (YouTube Music)
+[2025-12-05T16:30:20.988Z] Running command: spotdl "https://music.youtube.com/playlist?list=RDCLAK5uy_mcMBXir4RT5m0mkGIRtbwFOtD4nbiVSvg&playnext=1&si=dLJrcDeedyNJ_b0l" --format mp3 --audio youtube-music
+[2025-12-05T16:30:36.117Z] ✅ Download successful with strategy: Primary (YouTube Music)
+[2025-12-05T16:30:36.119Z] ☁️  Processing downloads (Upload & Import)...
+[2025-12-05T16:30:36.123Z] 🎉 Smart Import Complete! Added 0 new songs.
+[2025-12-05T16:41:47.049Z] 🚀 Starting Smart Import System...
+[2025-12-05T16:41:47.056Z] 📊 Loading playlist metadata...
+[2025-12-05T16:42:47.071Z] Spotdl save failed or timed out: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+[2025-12-05T16:42:47.071Z] ⚠️  Metadata fetch failed. Switching to Direct Download Mode (No duplicate check).
+[2025-12-05T16:42:47.071Z] ⚠️  Could not fetch metadata. Proceeding with direct playlist download.
+[2025-12-05T16:42:47.072Z] ⬇️  Downloading new songs...
+[2025-12-05T16:42:47.072Z] 👉 Trying strategy: Primary (YouTube Music)
+[2025-12-05T16:42:47.073Z] Running command: spotdl "https://open.spotify.com/playlist/2wopxXqqFrJBK3EK9l32IX?si=2209be82389847a6" --format mp3 --audio youtube-music
+[2025-12-05T16:43:51.218Z] Downloaded "Iqlipse Nova - Savera":                                            
+https://music.youtube.com/watch?v=SC2sYyq0Zog
+[2025-12-05T16:43:53.981Z] Downloaded "Atif Aslam - Tu Jaane Na":                                         
+https://music.youtube.com/watch?v=FA_J8XwpCaQ
+[2025-12-05T16:43:57.382Z] Downloaded "Anuv Jain - Alag Aasmaan":                                         
+https://music.youtube.com/watch?v=i1IDh_ZoJgI
+[2025-12-05T16:44:17.457Z] Downloaded "Mohammed Irfan - Banjaara (From "Ek Villain")":                    
+https://music.youtube.com/watch?v=_eZnQzneuKs
+[2025-12-05T16:44:43.327Z] Downloaded "Jasleen Royal - Ranjha (From "Shershaah")":                        
+https://music.youtube.com/watch?v=amWKXh9_EQE
+[2025-12-05T16:44:57.916Z] Downloaded "Pritam - Saude Bazi": https://music.youtube.com/watch?v=IYpJVYU4KE0
+[2025-12-05T16:45:03.556Z] Downloaded "Pritam - Tera Hone Laga Hoon":                                     
+https://music.youtube.com/watch?v=oeYgD5w3NQo
+[2025-12-05T16:45:03.702Z] Downloaded "Salim�Sulaiman - Tujh Mein Rab Dikhta Hai":                        
+https://music.youtube.com/watch?v=3E1NLVzDZ_Y
+[2025-12-05T16:45:31.156Z] Downloaded "Pritam - Jiyein Kyun":                                             
+https://music.youtube.com/watch?v=szdRoROQy_c
+[2025-12-05T16:45:55.469Z] Downloaded "Taaruk Raina - Kho Gaye":
+[2025-12-05T16:46:01.226Z] Downloaded "Suzonn - Farq hai": https://music.youtube.com/watch?v=T2Z80wUoSdY
+[2025-12-05T16:46:19.409Z] Downloaded "Dream Note - Waqt Ki Baatein":
+[2025-12-05T16:46:29.542Z] Downloaded "Akshath - Jadoo": https://music.youtube.com/watch?v=hQ0UcvucvSA
+[2025-12-05T16:46:41.367Z] Downloaded "gini - Sukoon": https://music.youtube.com/watch?v=guFs_hz1dlA
+[2025-12-05T16:46:46.048Z] Downloaded "Prateek Kuhad - Co2": https://music.youtube.com/watch?v=6FewJvQDTmA
+[2025-12-05T16:46:59.993Z] Downloaded "Gaurav Chatterji - Kaise Ab Kahein - From "Gutar Gu"":             
+https://music.youtube.com/watch?v=KTUohb-1rJk
+[2025-12-05T16:47:12.557Z] Downloaded "Anuv Jain - Gul": https://music.youtube.com/watch?v=Kh49Zqa84IE
+[2025-12-05T16:47:17.913Z] Downloaded "Aditya A - Chaand Baaliyan":                                       
+https://music.youtube.com/watch?v=HhSkylpSvmQ
+[2025-12-05T16:47:47.440Z] Downloaded "Prateek Kuhad - Kasoor":
+[2025-12-05T16:47:56.560Z] Downloaded "Faheem Abdullah - Ishq - From "Lost;Found"":                       
+https://music.youtube.com/watch?v=f419vqAt8PU
+[2025-12-05T16:48:02.767Z] Downloaded "The Local Train - Aaoge Tum Kabhi":                                
+https://music.youtube.com/watch?v=79Yc9gN3TPM
+[2025-12-05T16:48:07.885Z] Downloaded "Dikshant - Aankhon Se Batana":                                     
+https://music.youtube.com/watch?v=K8P4_3NZsKs
+[2025-12-05T16:48:30.532Z] Downloaded "Rito Riba - Heer Ranjha":                                          
+https://music.youtube.com/watch?v=ZKbxmsaZjxs
+[2025-12-05T16:48:39.639Z] Downloaded "Anubha Bajaj - Lamhey":
+[2025-12-05T16:49:01.995Z] Downloaded "Armaan Malik - Nodivalandava":                                     
+https://music.youtube.com/watch?v=QSnckGmBnGc
+[2025-12-05T16:49:33.428Z] Downloaded "Tochi Raina - Jugni Kehndiya":                                     
+https://music.youtube.com/watch?v=GbS5y8pMxGo
+[2025-12-05T16:49:44.363Z] Downloaded "Vishal-Shekhar - Bulleya":
+[2025-12-05T16:49:58.415Z] Downloaded "Vishal-Shekhar - Bulleya (From "MTV Unplugged")":                  
+https://www.youtube.com/watch?v=ZAxQXdEX_Hk
+[2025-12-05T16:49:59.710Z] Downloaded "Pritam - Kyon": https://music.youtube.com/watch?v=I8IGukb5qao
+[2025-12-05T16:50:29.654Z] Downloaded "Josh Brar - Tere Bina Na Guzara E":                                
+https://music.youtube.com/watch?v=TsCCCOlo-aI
+[2025-12-05T16:50:34.676Z] Downloaded "Aditya Rikhari - Faasle":                                          
+https://music.youtube.com/watch?v=zP9n2ZAS28Q
+[2025-12-05T16:50:44.719Z] Downloaded "Mitraz - Akhiyaan": https://music.youtube.com/watch?v=T35uru7JCIo
+[2025-12-05T16:50:55.738Z] Downloaded "Kavita Seth - Rangi Saari":                                        
+https://music.youtube.com/watch?v=Ev3w94r5O1U
+[2025-12-05T16:51:30.175Z] Downloaded "Pritam - Ve Kamleya (From "Rocky Aur Rani Kii Prem Kahaani")":
+[2025-12-05T16:51:36.745Z] Downloaded "Amit Trivedi - Aaj Se Teri":                                       
+https://music.youtube.com/watch?v=1E-ZSGWK6g0
+[2025-12-05T16:51:37.548Z] Downloaded "Pritam - Tere Hawaale (From "Laal Singh Chaddha")":                
+https://music.youtube.com/watch?v=Z0VbANbyH2o
+[2025-12-05T16:51:46.181Z] Downloaded "A.R. Rahman - Nadaan Parinde":                                     
+https://music.youtube.com/watch?v=waHJsPu_fmU
+[2025-12-05T16:52:13.347Z] Downloaded "Pritam - Pee Loon": https://music.youtube.com/watch?v=FYHKeHYlVA4
+[2025-12-05T16:52:15.469Z] Downloaded "Shankar-Ehsaan-Loy - Ishq Di Baajiyaan":
+[2025-12-05T16:52:25.849Z] Downloaded "Atif Aslam - Main Rang Sharbaton Ka":                              
+https://music.youtube.com/watch?v=cE4atI_v-Z0
+[2025-12-05T16:52:34.562Z] Downloaded "Atif Aslam - O Saathi":                                            
+https://music.youtube.com/watch?v=SRPvngN3Uws
+[2025-12-05T16:53:12.832Z] Downloaded "Mohit Chauhan - Rang Lageya":
+[2025-12-05T16:53:16.141Z] Downloaded "Kailash Kher - Teri Deewani":                                      
+https://music.youtube.com/watch?v=3R-q79a7n98
+[2025-12-05T16:53:29.885Z] Downloaded "Sachet-Parampara - Raanjhan (From "Do Patti")":                    
+https://music.youtube.com/watch?v=7Iqe_yCYwvM
+[2025-12-05T16:53:40.219Z] Downloaded "Ankit Tiwari - Sunn Raha Hai (Male Version)":                      
+https://music.youtube.com/watch?v=lOBmToX9gr8
+[2025-12-05T16:53:57.153Z] Downloaded "Akhil Sachdeva - Humsafar (From "Badrinath Ki Dulhania")":         
+https://music.youtube.com/watch?v=Aokj-w3COw0
+[2025-12-05T16:54:07.716Z] Downloaded "Ayushmann Khurrana - Mere Liye Tum Kaafi Ho (From "Shubh Mangal    
+Zyada Saavdhan")": https://music.youtube.com/watch?v=Yq-W-BGmKMI
+[2025-12-05T16:54:17.371Z] Downloaded "Kailash Kher - Piya Ghar Aavenge":                                 
+https://music.youtube.com/watch?v=zgJPTTiCK2E
+[2025-12-05T16:54:29.752Z] Downloaded "Anurag Saikia - Ishq Hai":                                         
+https://music.youtube.com/watch?v=TQqBjSAK52s
+[2025-12-05T16:54:37.213Z] Downloaded "Jasleen Royal - Sahiba":                                           
+https://music.youtube.com/watch?v=jAnWrlSuE4c
+[2025-12-05T16:54:45.721Z] Downloaded "Pritam - Raat Akeli Thi (From "Merry Christmas")":                 
+https://music.youtube.com/watch?v=QbAJzzB1oBI
+[2025-12-05T16:55:03.076Z] Downloaded "Pritam - Raat Akeli Thi (From "Merry Christmas")":                 
+https://music.youtube.com/watch?v=QbAJzzB1oBI
+[2025-12-05T16:55:09.029Z] Downloaded "Rahat Fateh Ali Khan - Nit Khair Manga":                           
+https://music.youtube.com/watch?v=-IO4wID2B3A
+[2025-12-05T16:55:16.843Z] Downloaded "Ayushmann Khurrana - Pani Da Rang - Male Vocals":                  
+https://music.youtube.com/watch?v=s6oQTPs0rZI
+[2025-12-05T16:55:28.941Z] Downloaded "Udit Narayan - Jugraafiya - From "Super 30"":                      
+https://music.youtube.com/watch?v=X8bu-nEmN5o
+[2025-12-05T16:55:46.176Z] Downloaded "Sachet Tandon - Maiyya Mainu":                                     
+https://music.youtube.com/watch?v=9Cp-hNvSWZs
+[2025-12-05T16:55:50.891Z] Downloaded "Sumedha Karmahe - Toota Jo Kabhi Tara":                            
+https://music.youtube.com/watch?v=4xYyIDq_coo
+[2025-12-05T16:55:56.064Z] Downloaded "Ed Sheeran - Sapphire":                                            
+https://music.youtube.com/watch?v=xT-5e1F1p8Y
+[2025-12-05T16:56:14.293Z] Downloaded "Pritam - Bulleya": https://music.youtube.com/watch?v=tukJPVuUgxw
+[2025-12-05T16:56:20.761Z] Downloaded "Atif Aslam - Dil Diyan Gallan":                                    
+https://music.youtube.com/watch?v=u5DCgnh8S9M
+[2025-12-05T16:56:22.754Z] Downloaded "A.R. Rahman - Tere Bina":                                          
+https://music.youtube.com/watch?v=Fi3GovijpWA
+[2025-12-05T16:56:28.561Z] Downloaded "Abhijeet Srivastava - Chashni Lofi Mix":                           
+https://music.youtube.com/watch?v=hq-UkIiAxRA
+[2025-12-05T16:56:40.909Z] Downloaded "Arijit Singh - Tose Naina":
+[2025-12-05T16:56:52.969Z] Downloaded "Arijit Singh - Mast Magan (From "2 States)":                       
+https://music.youtube.com/watch?v=InD68CDGT9Q
+[2025-12-05T16:56:53.357Z] Downloaded "Arijit Singh - Har Kisi Ko (From "Boss)":
+[2025-12-05T16:57:00.382Z] Downloaded "Alka Yagnik - Agar Tum Saath Ho (From "Tamasha")":                 
+https://music.youtube.com/watch?v=FOA9iyxsW_A
+[2025-12-05T16:57:25.735Z] Downloaded "Kishore Kumar - Yeh Sham Mastani":                                 
+https://music.youtube.com/watch?v=R7WncVagGDo
+[2025-12-05T16:57:26.388Z] ✅ Download successful with strategy: Primary (YouTube Music)
+[2025-12-05T16:57:26.388Z] ☁️  Processing downloads (Upload & Import)...
+[2025-12-05T16:57:26.389Z]    Processing: A.R. Rahman, Chinmayi, Murtuza Khan, Qadir Khan - Tere Bina.mp3
+[2025-12-05T16:57:27.333Z] FATAL ERROR in smartImport: uploadToCloudinary is not defined
+ReferenceError: uploadToCloudinary is not defined
+    at smartImport (A:\projects\spotify\scripts\smart_import.js:279:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-12-05T16:59:13.433Z] 🚀 Starting Smart Import System...
+[2025-12-05T16:59:13.438Z] 📊 Loading playlist metadata...
+[2025-12-05T16:59:15.140Z] 🚀 Starting Smart Import System...
+[2025-12-05T16:59:15.158Z] 📊 Loading playlist metadata...
+[2025-12-05T17:00:13.454Z] Spotdl save failed or timed out: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+[2025-12-05T17:00:13.455Z] ⚠️  Metadata fetch failed. Switching to Direct Download Mode (No duplicate check).
+[2025-12-05T17:00:13.455Z] ⚠️  Could not fetch metadata. Proceeding with direct playlist download.
+[2025-12-05T17:00:13.456Z] ⬇️  Downloading new songs...
+[2025-12-05T17:00:13.456Z] 👉 Trying strategy: Primary (YouTube Music)
+[2025-12-05T17:00:13.457Z] Running command: spotdl "https://open.spotify.com/playlist/2wopxXqqFrJBK3EK9l32IX?si=2209be82389847a6" --format mp3 --audio youtube-music
+[2025-12-05T17:00:15.267Z] Spotdl save failed or timed out: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+[2025-12-05T17:00:15.267Z] ⚠️  Metadata fetch failed. Switching to Direct Download Mode (No duplicate check).
+[2025-12-05T17:00:15.270Z] ⚠️  Could not fetch metadata. Proceeding with direct playlist download.
+[2025-12-05T17:00:15.271Z] ⬇️  Downloading new songs...
+[2025-12-05T17:00:15.272Z] 👉 Trying strategy: Primary (YouTube Music)
+[2025-12-05T17:00:15.273Z] Running command: spotdl "https://open.spotify.com/playlist/2wopxXqqFrJBK3EK9l32IX?si=2209be82389847a6" --format mp3 --audio youtube-music
+[2025-12-05T17:00:36.190Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:36.201Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:36.260Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:36.287Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:36.288Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:36.313Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:36.409Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:36.495Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 6 s
+
+[2025-12-05T17:00:42.378Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 1 s
+
+[2025-12-05T17:00:42.407Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 1 s
+
+[2025-12-05T17:00:42.409Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 1 s
+
+[2025-12-05T17:00:42.532Z] STDERR: Your application has reached a rate/request limit. Retry will occur after: 1 s
+
+[2025-12-05T17:00:45.503Z] ✅ Download successful with strategy: Primary (YouTube Music)
+[2025-12-05T17:00:45.506Z] ☁️  Processing downloads (Upload & Import)...
+[2025-12-05T17:00:45.509Z]    Processing: A.R. Rahman, Chinmayi, Murtuza Khan, Qadir Khan - Tere Bina.mp3
+[2025-12-05T17:00:48.629Z] ✅ Download successful with strategy: Primary (YouTube Music)
+[2025-12-05T17:00:48.630Z] ☁️  Processing downloads (Upload & Import)...
+[2025-12-05T17:00:48.640Z]    Processing: A.R. Rahman, Chinmayi, Murtuza Khan, Qadir Khan - Tere Bina.mp3
+[2025-12-05T17:00:53.676Z]    Processing: A.R. Rahman, Mohit Chauhan - Nadaan Parinde.mp3
+[2025-12-05T17:00:56.501Z] FATAL ERROR in smartImport: ENOENT: no such file or directory, unlink 'A:\projects\spotify\downloads\A.R. Rahman, Chinmayi, Murtuza Khan, Qadir Khan - Tere Bina.mp3'
+Error: ENOENT: no such file or directory, unlink 'A:\projects\spotify\downloads\A.R. Rahman, Chinmayi, Murtuza Khan, Qadir Khan - Tere Bina.mp3'
+    at Object.unlinkSync (node:fs:1953:11)
+    at smartImport (A:\projects\spotify\scripts\smart_import.js:313:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-12-05T17:00:58.787Z]    Processing: Abhijeet Srivastava, Vishal-Shekhar, DJ Rink - Chashni Lofi Mix.mp3
+[2025-12-05T17:01:01.990Z]    Processing: Aditya A - Chaand Baaliyan.mp3
+[2025-12-05T17:01:02.549Z]    Processing: Aditya Rikhari - Faasle.mp3
+[2025-12-05T17:01:03.081Z]    Processing: Akhil Sachdeva, Mansheel Gujral - Humsafar (From 'Badrinath Ki Dulhania').mp3
+[2025-12-05T17:01:06.742Z]    Processing: Akshath - Jadoo.mp3
+[2025-12-05T17:01:09.557Z]    Processing: Alka Yagnik, Arijit Singh - Agar Tum Saath Ho (From 'Tamasha').mp3
+[2025-12-05T17:01:13.540Z]    Processing: Amit Trivedi, Arijit Singh - Aaj Se Teri.mp3
+[2025-12-05T17:01:14.037Z]    Processing: Ankit Tiwari - Sunn Raha Hai (Male Version).mp3
+[2025-12-05T17:01:29.988Z]    Processing: Anubha Bajaj - Lamhey.mp3
+[2025-12-05T17:01:30.509Z]    Processing: Anurag Saikia, Raj Shekhar, Romy, Amarabha Banerjee, Varun Jain, Madhubanti Bagchi, Mismatched - Cast - Ishq Hai.mp3
+[2025-12-05T17:01:34.583Z]    Processing: Anuv Jain - Alag Aasmaan.mp3
+[2025-12-05T17:01:35.124Z]    Processing: Anuv Jain - Gul.mp3
+[2025-12-05T17:01:35.574Z]    Processing: Arijit Singh, Chinmayi - Mast Magan (From '2 States).mp3
+[2025-12-05T17:01:40.492Z]    Processing: Arijit Singh, Hanif Shaikh - Tose Naina.mp3
+[2025-12-05T17:01:40.964Z]    Processing: Arijit Singh, Neeti Mohan - Har Kisi Ko (From 'Boss).mp3
+[2025-12-05T17:01:45.121Z]    Processing: Armaan Malik, Shreya Ghoshal - Nodivalandava.mp3
+[2025-12-05T17:01:48.185Z]    Processing: Atif Aslam - Dil Diyan Gallan.mp3
+[2025-12-05T17:01:48.653Z]    Processing: Atif Aslam, Arko - O Saathi.mp3
+[2025-12-05T17:01:49.107Z]    Processing: Atif Aslam, Chinmayi, Pritam - Main Rang Sharbaton Ka.mp3
+[2025-12-05T17:01:52.021Z]    Processing: Atif Aslam, Pritam - Tu Jaane Na.mp3
+[2025-12-05T17:01:52.487Z]    Processing: Ayushmann Khurrana, Rochak Kohli - Pani Da Rang - Male Vocals.mp3
+[2025-12-05T17:01:55.475Z]    Processing: Ayushmann Khurrana, Tanishk-Vayu - Mere Liye Tum Kaafi Ho (From 'Shubh Mangal Zyada Saavdhan').mp3
+[2025-12-05T17:01:57.966Z]    Processing: Dikshant - Aankhon Se Batana.mp3
+[2025-12-05T17:01:58.428Z]    Processing: Dream Note - Waqt Ki Baatein.mp3
+[2025-12-05T17:01:58.876Z]    Processing: Ed Sheeran - Sapphire.mp3
+[2025-12-05T17:01:59.344Z]    Processing: Faheem Abdullah, Rauhan Malik, Amir Ameer - Ishq - From 'Lost;Found'.mp3
+[2025-12-05T17:02:02.494Z]    Processing: Gaurav Chatterji, Aasa Singh, Hansika Pareek, Hrishi Giridhar, Pratik Gangavane - Kaise Ab Kahein - From 'Gutar Gu'.mp3
+[2025-12-05T17:02:05.283Z]    Processing: gini - Sukoon.mp3
+[2025-12-05T17:02:08.626Z]    Processing: Iqlipse Nova, Anubha Bajaj - Savera.mp3
+[2025-12-05T17:02:11.201Z]    Processing: Jasleen Royal, B Praak, Romy - Ranjha (From 'Shershaah').mp3
+[2025-12-05T17:02:14.599Z]    Processing: Jasleen Royal, Stebin Ben, Vijay Deverakonda, Radhikka Madan, Priya Saraiya, Aditya Sharma - Sahiba.mp3
+[2025-12-05T17:02:15.063Z]    Processing: Josh Brar - Tere Bina Na Guzara E.mp3
+[2025-12-05T17:02:15.522Z]    Processing: Kailash Kher, Paresh Kamath, Naresh Kamath - Piya Ghar Aavenge.mp3
+[2025-12-05T17:02:18.736Z]    Processing: Kailash Kher, Paresh Kamath, Naresh Kamath - Teri Deewani.mp3
+[2025-12-05T17:02:19.230Z]    Processing: Kavita Seth, Kanishk Seth - Rangi Saari.mp3
+[2025-12-05T17:02:24.095Z]    Processing: Kishore Kumar, R. D. Burman - Yeh Sham Mastani.mp3
+[2025-12-05T17:02:30.520Z]    Processing: Mitraz - Akhiyaan.mp3
+[2025-12-05T17:02:31.001Z]    Processing: Mohammed Irfan - Banjaara (From 'Ek Villain').mp3
+[2025-12-05T17:02:34.525Z]    Processing: Mohit Chauhan, Rochak Kohli - Rang Lageya.mp3
+[2025-12-05T17:02:34.975Z]    Processing: Prateek Kuhad - Co2.mp3
+[2025-12-05T17:02:35.434Z]    Processing: Prateek Kuhad - Kasoor.mp3
+[2025-12-05T17:02:35.886Z]    Processing: Pritam, Amit Mishra, Shilpa Rao - Bulleya.mp3
+[2025-12-05T17:02:40.622Z]    Processing: Pritam, Anupam Amod - Saude Bazi.mp3
+[2025-12-05T17:02:45.593Z]    Processing: Pritam, Arijit Singh, Antara Mitra - Raat Akeli Thi (From 'Merry Christmas').mp3
+[2025-12-05T17:02:49.448Z]    Processing: Pritam, Arijit Singh, Shilpa Rao - Tere Hawaale (From 'Laal Singh Chaddha').mp3
+[2025-12-05T17:02:53.461Z]    Processing: Pritam, Arijit Singh, Shreya Ghoshal, Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya - Ve Kamleya (From 'Rocky Aur Rani Kii Prem Kahaani').mp3
+[2025-12-05T17:02:57.021Z]    Processing: Pritam, Atif Aslam, Alisha Chinai - Tera Hone Laga Hoon.mp3
+[2025-12-05T17:02:57.487Z]    Processing: Pritam, Mohit Chauhan, Irshad Kamil - Pee Loon.mp3
+[2025-12-05T17:03:00.944Z]    Processing: Pritam, Papon - Jiyein Kyun.mp3
+[2025-12-05T17:03:01.390Z]    Processing: Pritam, Papon, Sunidhi Chauhan - Kyon.mp3
+[2025-12-05T17:03:05.465Z]    Processing: Rahat Fateh Ali Khan, Tanishk Bagchi - Nit Khair Manga.mp3
+[2025-12-05T17:03:08.974Z]    Processing: Rito Riba, Rajat Nagpal, Rana Sotal - Heer Ranjha.mp3
+[2025-12-05T17:03:09.422Z]    Processing: Sachet Tandon, Shellee - Maiyya Mainu.mp3
+[2025-12-05T17:03:13.080Z]    Processing: Sachet-Parampara, Parampara Tandon, Kausar Munir - Raanjhan (From 'Do Patti').mp3
+[2025-12-05T17:03:16.571Z]    Processing: Salim–Sulaiman, Roop Kumar Rathod, Jaideep Sahni - Tujh Mein Rab Dikhta Hai.mp3
+[2025-12-05T17:03:20.560Z]    Processing: Shankar-Ehsaan-Loy, Diljit Dosanjh - Ishq Di Baajiyaan.mp3
+[2025-12-05T17:03:21.013Z]    Processing: Sumedha Karmahe, Atif Aslam - Toota Jo Kabhi Tara.mp3
+[2025-12-05T17:03:21.512Z]    Processing: Suzonn - Farq hai.mp3
+[2025-12-05T17:03:26.305Z]    Processing: Taaruk Raina, Mismatched - Cast - Kho Gaye.mp3
+[2025-12-05T17:03:29.297Z]    Processing: The Local Train - Aaoge Tum Kabhi.mp3
+[2025-12-05T17:03:29.771Z]    Processing: Tochi Raina - Jugni Kehndiya.mp3
+[2025-12-05T17:03:34.638Z]    Processing: Udit Narayan, Shreya Ghoshal - Jugraafiya - From 'Super 30'.mp3
+[2025-12-05T17:03:39.280Z]    Processing: Vishal-Shekhar, Papon, Irshad Kamil - Bulleya (From 'MTV Unplugged').mp3
+[2025-12-05T17:03:42.875Z]    Processing: Vishal-Shekhar, Papon, Irshad Kamil - Bulleya.mp3
+[2025-12-05T17:03:43.337Z] 🎉 Smart Import Complete! Added 39 new songs.
