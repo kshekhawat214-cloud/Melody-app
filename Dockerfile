@@ -1,5 +1,5 @@
 # Base image with Node.js
-FROM node:18-bullseye
+FROM node:20-bullseye
 
 # 1. Install System Dependencies (Python, FFmpeg)
 RUN apt-get update && apt-get install -y \
