@@ -1,5 +1,5 @@
-# Base image with Node.js
-FROM node:20-bullseye
+# Base image with Node.js (Bookworm includes Python 3.11+)
+FROM node:20-bookworm
 
 # Define Build Arguments (so Next.js can see env vars during build)
 ARG NEXT_PUBLIC_SUPABASE_URL
