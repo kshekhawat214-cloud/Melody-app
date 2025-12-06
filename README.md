@@ -29,6 +29,55 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [Python](https://www.python.org/) (v3.8 or higher)
+- [FFmpeg](https://ffmpeg.org/download.html) (Ensure it's added to your system PATH)
+
+## Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/kshekhawat214-cloud/Melody-app.git
+    cd Melody-app
+    ```
+
+2.  **Install Node.js dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Install Python requirements (if applicable):**
+    If you plan to use the data enrichment scripts:
+    ```bash
+    pip install -r requirements.txt
+    # If requirements.txt doesn't exist yet, you may need:
+    # pip install pandas
+    ```
+
+## Running the App
+
+1.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+2.  **Open the app:**
+    Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Data Enrichment
+
+This project includes scripts to enrich song data (energy, valence, etc.).
+
+To run the enrichment script:
+```bash
+python enrich_songs.py
+```
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

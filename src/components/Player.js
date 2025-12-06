@@ -194,27 +194,27 @@ export default function Player() {
                                 </div>
 
                                 {/* Main Controls */}
-                                <div className="flex items-center justify-between flex-shrink-0">
-                                    <button onClick={toggleShuffle} className={cn("transition-colors", isShuffle ? "text-green-500" : "text-white")}>
+                                <div className="flex items-center justify-between flex-shrink-0 px-4">
+                                    <button onClick={toggleShuffle} className={cn("transition-colors p-2", isShuffle ? "text-green-500" : "text-white")}>
                                         <Shuffle className="w-6 h-6" />
                                     </button>
-                                    <button onClick={prevSong} className="text-white hover:scale-110 transition-transform">
+                                    <button onClick={prevSong} className="text-white hover:scale-110 transition-transform p-2 active:scale-95">
                                         <SkipBack className="w-8 h-8 fill-current" />
                                     </button>
                                     <button
                                         onClick={() => playSong(currentSong)}
-                                        className="w-16 h-16 bg-white rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-xl"
+                                        className="w-20 h-20 bg-white rounded-full flex items-center justify-center hover:scale-105 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]"
                                     >
                                         {isPlaying ? (
-                                            <Pause className="w-8 h-8 text-black fill-black" />
+                                            <Pause className="w-10 h-10 text-black fill-black" />
                                         ) : (
-                                            <Play className="w-8 h-8 text-black fill-black ml-1" />
+                                            <Play className="w-10 h-10 text-black fill-black ml-1" />
                                         )}
                                     </button>
-                                    <button onClick={handleSongSkip} className="text-white hover:scale-110 transition-transform">
+                                    <button onClick={handleSongSkip} className="text-white hover:scale-110 transition-transform p-2 active:scale-95">
                                         <SkipForward className="w-8 h-8 fill-current" />
                                     </button>
-                                    <button className="text-white transition-colors">
+                                    <button className="text-white transition-colors p-2">
                                         <Repeat className="w-6 h-6" />
                                     </button>
                                 </div>
@@ -224,8 +224,8 @@ export default function Player() {
                                     <button className="text-neutral-400 hover:text-white">
                                         <Volume2 className="w-5 h-5" />
                                     </button>
-                                    <button onClick={() => { setIsFullScreen(false); toggleQueue(); }} className={cn("transition-colors", isQueueOpen ? "text-green-500" : "text-neutral-400 hover:text-white")}>
-                                        <ListMusic className="w-5 h-5" />
+                                    <button onClick={() => toggleQueue()} className={cn("transition-colors p-2", isQueueOpen ? "text-green-500" : "text-neutral-400 hover:text-white")}>
+                                        <ListMusic className="w-6 h-6" />
                                     </button>
                                 </div>
 
@@ -298,6 +298,79 @@ export default function Player() {
                                 </div>
                             </div>
                         </div>
+                        {/* Queue Overlay (Mobile) */}
+                        <AnimatePresence>
+                            {isQueueOpen && (
+                                <motion.div
+                                    initial={{ y: "100%" }}
+                                    animate={{ y: 0 }}
+                                    exit={{ y: "100%" }}
+                                    transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                                    className="absolute inset-x-0 bottom-0 top-16 bg-neutral-900 z-50 rounded-t-3xl overflow-hidden flex flex-col shadow-[0_-10px_40px_rgba(0,0,0,0.5)] border-t border-white/10"
+                                >
+                                    {/* Queue Header */}
+                                    <div className="flex items-center justify-between p-6 border-b border-white/5 bg-neutral-900/95 backdrop-blur-xl">
+                                        <h3 className="text-xl font-bold text-white">Queue</h3>
+                                        <button onClick={toggleQueue} className="p-2 rounded-full hover:bg-white/10 text-neutral-400 hover:text-white transition-colors">
+                                            <ChevronDown className="w-6 h-6" />
+                                        </button>
+                                    </div>
+
+                                    {/* Queue List */}
+                                    <div className="flex-1 overflow-y-auto p-4 space-y-2 no-scrollbar">
+                                        {queue.length === 0 ? (
+                                            <div className="flex flex-col items-center justify-center h-full text-neutral-500 gap-4">
+                                                <ListMusic className="w-12 h-12 opacity-50" />
+                                                <p>Queue is empty</p>
+                                            </div>
+                                        ) : (
+                                            <motion.ul
+                                                className="space-y-2"
+                                                initial="hidden"
+                                                animate="show"
+                                                variants={{
+                                                    hidden: { opacity: 0 },
+                                                    show: {
+                                                        opacity: 1,
+                                                        transition: {
+                                                            staggerChildren: 0.05
+                                                        }
+                                                    }
+                                                }}
+                                            >
+                                                {queue.map((song, i) => (
+                                                    <motion.li
+                                                        key={`${song.id}-${i}`}
+                                                        variants={{
+                                                            hidden: { y: 20, opacity: 0 },
+                                                            show: { y: 0, opacity: 1 }
+                                                        }}
+                                                        className={cn(
+                                                            "flex items-center gap-3 p-3 rounded-xl transition-colors",
+                                                            currentSong.id === song.id ? "bg-white/10" : "hover:bg-white/5"
+                                                        )}
+                                                        onClick={() => playSong(song)}
+                                                    >
+                                                        <img src={song.cover} alt={song.title} className="w-12 h-12 rounded-lg object-cover shadow-sm" />
+                                                        <div className="flex-1 min-w-0">
+                                                            <h4 className={cn("font-medium truncate", currentSong.id === song.id ? "text-green-500" : "text-white")}>
+                                                                {song.title}
+                                                            </h4>
+                                                            <p className="text-sm text-neutral-400 truncate">{song.artist}</p>
+                                                        </div>
+                                                        {currentSong.id === song.id && (
+                                                            <div className="w-4 h-4 rounded-full bg-green-500 flex items-center justify-center">
+                                                                <div className="w-1.5 h-1.5 bg-black rounded-full animate-pulse" />
+                                                            </div>
+                                                        )}
+                                                    </motion.li>
+                                                ))}
+                                            </motion.ul>
+                                        )}
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -317,7 +390,9 @@ export default function Player() {
                     />
                     <div className="flex-1 min-w-0 ml-1">
                         <h4 className="font-medium text-white text-sm md:text-base truncate">{currentSong.title}</h4>
-                        <ArtistLinks artists={currentSong.artist} className="text-xs md:text-sm text-neutral-400 truncate block" />
+                        <p className="text-xs md:text-sm text-neutral-400 truncate block">
+                            {currentSong.artist}
+                        </p>
                     </div>
                     <button
                         onClick={(e) => {

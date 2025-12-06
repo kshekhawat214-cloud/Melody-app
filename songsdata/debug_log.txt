@@ -369,3 +369,149 @@ https://music.youtube.com/watch?v=GnUW4AF1LZo
 [2025-12-05T21:28:52.234Z] ☁️  Processing downloads (Upload & Import)...
 [2025-12-05T21:28:52.239Z]    Processing: Bruno Mars - Just the Way You Are.mp3
 [2025-12-05T21:28:59.839Z] 🎉 Smart Import Complete! Added 1 new songs.
+[2025-12-05T22:59:17.674Z] 🚀 Starting Smart Import System...
+[2025-12-05T22:59:17.682Z] 📊 Loading playlist metadata...
+[2025-12-05T22:59:34.777Z] Spotdl save failed or timed out: Command failed: spotdl save "https://music.youtube.com/watch?v=oXtIFNbRrKc&si=kIEoF-h9TL_9KBS8" --save-file "A:\projects\spotify\downloads\playlist_meta.spotdl"
+[2025-12-05T22:59:34.778Z] ⚠️  Metadata fetch failed. Switching to Direct Download Mode (No duplicate check).
+[2025-12-05T22:59:34.778Z] ⚠️  Could not fetch metadata. Proceeding with direct playlist download.
+[2025-12-05T22:59:34.779Z] ⬇️  Downloading new songs...
+[2025-12-05T22:59:34.779Z] 👉 Trying strategy: Primary (SoundCloud)
+[2025-12-05T22:59:34.784Z] Running command: python -m spotdl "https://music.youtube.com/watch?v=oXtIFNbRrKc&si=kIEoF-h9TL_9KBS8" --format mp3 --audio soundcloud
+[2025-12-05T22:59:48.425Z] Processing query:                                                              
+https://music.youtube.com/watch?v=oXtIFNbRrKc&si=kIEoF-h9TL_9KBS8
+[2025-12-05T22:59:49.485Z] 
+[2025-12-05T22:59:49.644Z] An error occurred
+[2025-12-05T22:59:49.646Z] +--------------------- Traceback (most recent call last) ---------------------+
+| C:\Python313\Lib\site-packages\spotdl\console\entry_point.py:160 in         |
+| entry_point                                                                 |
+|                                                                             |
+|   157     try:                                                              |
+|   158         # Pick the operation to perform                               |
+|   159         # based on the name and run it!                               |
+| > 160         OPERATIONS[arguments.operation](                              |
+|   161             query=arguments.query,                                    |
+|   162             downloader=downloader,                                    |
+|   163         )                                                             |
+|                                                                             |
+| C:\Python313\Lib\site-packages\spotdl\console\download.py:25 in download    |
+|                                                                             |
+|   22     """                                                                |
+|   23                                                                        |
+|   24     # Parse the query                                                  |
+| > 25     songs = get_simple_songs(                                          |
+|   26         query,                                                         |
+|   27         use_ytm_data=downloader.settings["ytm_data
+[2025-12-05T22:59:49.646Z] "],                  |
+|   28         playlist_numbering=downloader.settings["playlist_numbering"],  |
+|                                                                             |
+| C:\Python313\Lib\site-packages\spotdl\utils\search.py:178 in                |
+| get_simple_songs                                                            |
+|                                                                             |
+|   175             track_data = get_ytm_client().get_song(request.split("?v= |
+|   176                                                                       |
+|   177             yt_song = Song.from_search_term(                          |
+| > 178                 f"{track_data['videoDetails']['author']}
+[2025-12-05T22:59:49.647Z] -            |
+|       {track_data['videoDetails']['title']}"                                |
+|   179             )                                                         |
+|   180                                                                       |
+|   181             if use_ytm_data:                                          |
++-----------------------------------------------------------------------------+
+KeyError: 'videoDetails'
+[2025-12-05T22:59:50.463Z] ⚠️  Strategy Primary (SoundCloud) failed or limited (Exit: 1).
+[2025-12-05T22:59:50.464Z] 🔄 Switching to next strategy...
+[2025-12-05T22:59:52.477Z] 👉 Trying strategy: Secondary (YouTube Music)
+[2025-12-05T22:59:52.479Z] Running command: python -m spotdl "https://music.youtube.com/watch?v=oXtIFNbRrKc&si=kIEoF-h9TL_9KBS8" --format mp3 --audio youtube-music
+[2025-12-05T23:00:05.539Z] Processing query:                                                              
+https://music.youtube.com/watch?v=oXtIFNbRrKc&si=kIEoF-h9TL_9KBS8
+[2025-12-05T23:00:06.551Z] 
+[2025-12-05T23:00:06.659Z] An error occurred
+[2025-12-05T23:00:06.660Z] +--------------------- Traceback (most recent call last) ---------------------+
+| C:\Python313\Lib\site-packages\spotdl\console\entry_point.py:160 in         |
+| entry_point                                                                 |
+|                                                                             |
+|   157     try:                                                              |
+|   158         # Pick the operation to perform                               |
+|   159         # based on the name and run it!                               |
+| > 160         OPERATIONS[arguments.operation](                              |
+|   161             query=arguments.query,                                    |
+|   162             downloader=downloader,                                    |
+|   163         )                                                             |
+|                                                                             |
+| C:\Python313\Lib\site-packages\spotdl\console\download.py:25 in download    |
+|                                                                             |
+[2025-12-05T23:00:06.662Z] |
+[2025-12-05T23:00:06.665Z] 22     """                                                                |
+|   23                                                                        |
+|   24     # Parse the query                                                  |
+| > 25     songs = get_simple_songs(                                          |
+|   26         query,                                                         |
+|   27         use_ytm_data=downloader.settings["ytm_data"],                  |
+|
+[2025-12-05T23:00:06.666Z] 28         playlist_numbering=downloader.settings["playlist_numbering"],  |
+|                                                                             |
+| C:\Python313\Lib\site-packages\spotdl\utils\search.py:178 in                |
+| get_simple_songs                                                            |
+|                                                                             |
+|   175             track_data = get_ytm_client().get_song(request.split(
+[2025-12-05T23:00:06.666Z] "?v= |
+|   176                                                                       |
+|   177             yt_song = Song.from_search_term(                          |
+| > 178                 f"{track_data['videoDetails']['author']} -            |
+|       {
+[2025-12-05T23:00:06.667Z] track_data['videoDetails']['title']}"                                |
+|   179             )                                                         |
+|   180                                                                       |
+|   181             if use_ytm_data:                                          |
++-----------------------------------------------------------------------------+
+[2025-12-05T23:00:06.668Z] KeyError: 'videoDetails'
+[2025-12-05T23:00:07.522Z] ⚠️  Strategy Secondary (YouTube Music) failed or limited (Exit: 1).
+[2025-12-05T23:00:07.525Z] 🔄 Switching to next strategy...
+[2025-12-05T23:00:09.539Z] 👉 Trying strategy: Last Resort (YouTube)
+[2025-12-05T23:00:09.541Z] Running command: python -m spotdl "https://music.youtube.com/watch?v=oXtIFNbRrKc&si=kIEoF-h9TL_9KBS8" --format mp3 --audio youtube
+[2025-12-05T23:00:20.927Z] Processing query:                                                              
+https://music.youtube.com/watch?v=oXtIFNbRrKc&si=kIEoF-h9TL_9KBS8
+[2025-12-05T23:00:20.928Z] 
+[2025-12-05T23:00:22.023Z] 
+[2025-12-05T23:00:22.191Z] An error occurred
+[2025-12-05T23:00:22.192Z] +--------------------- Traceback (most recent call last) ---------------------+
+| C:\Python313\Lib\site-packages\spotdl\console\entry_point.py:160 in         |
+| entry_point                                                                 |
+|                                                                             |
+|   157     try:                                                              |
+|   158         # Pick the operation to perform                               |
+|   159         # based on the name and run it!                               |
+| > 160         OPERATIONS[arguments.operation](                              |
+|   161             query=arguments.query,                                    |
+|   162             downloader=downloader,                                    |
+[2025-12-05T23:00:22.193Z] |   163         )                                                             |
+|                                                                             |
+| C:\Python313\Lib\site-packages\spotdl\console\download.py:25 in download    |
+|                                                                             |
+|   22     """                                                                |
+|   23
+[2025-12-05T23:00:22.193Z] |
+|   24     # Parse the query                                                  |
+| > 25     songs = get_simple_songs(                                          |
+|   26         query,                                                         |
+|   27         use_ytm_data=downloader.settings["ytm_data"],                  |
+|   28         playlist_numbering=downloader.settings["playlist_numbering"],  |
+|                                                                             |
+[2025-12-05T23:00:22.194Z] | C:\Python313\Lib\site-packages\spotdl\utils\search.py:178 in                |
+| get_simple_songs                                                            |
+|                                                                             |
+|   175             track_data = get_ytm_client().get_song(request.split("?v= |
+|   176                                                                       |
+|   177             yt_song = Song.from_search_term(                          |
+| > 178                 f"{track_data['
+[2025-12-05T23:00:22.198Z] videoDetails']['author']} -            |
+|       {track_data['videoDetails']['title']}"                                |
+|   179             )                                                         |
+|   180                                                                       |
+|   181             if use_ytm_data:                                          |
++-----------------------------------------------------------------------------+
+KeyError: 'videoDetails'
+[2025-12-05T23:00:23.031Z] ⚠️  Strategy Last Resort (YouTube) failed or limited (Exit: 1).
+[2025-12-05T23:00:23.031Z] 🔄 Switching to next strategy...
+[2025-12-05T23:00:25.042Z] ☁️  Processing downloads (Upload & Import)...
+[2025-12-05T23:00:25.045Z] 🎉 Smart Import Complete! Added 0 new songs.

@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { usePlayer } from '@/context/PlayerContext';
-import { motion } from 'framer-motion';
-import { Music, User, Lock } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Music, User, Lock, ChevronDown, X } from 'lucide-react';
 
 export default function ProfilePage() {
     const { user, playlists, followedArtists } = usePlayer();
@@ -168,45 +168,81 @@ export default function ProfilePage() {
                 )}
             </section>
 
-            {/* Download Modal */}
+            {/* Download Modal - Minimized Logic */}
             {showDownloadModal && (
-                <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-                    <div className="bg-neutral-900 p-6 rounded-xl w-full max-w-md space-y-4 border border-white/10">
-                        <div className="flex items-center justify-between">
-                            <h3 className="text-xl font-bold">Download Music</h3>
-                            <button onClick={() => setShowDownloadModal(false)} className="text-neutral-400 hover:text-white">Close</button>
-                        </div>
+                <AnimatePresence>
+                    {!status.minimized ? (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+                        >
+                            <motion.div
+                                initial={{ scale: 0.9, y: 20 }}
+                                animate={{ scale: 1, y: 0 }}
+                                className="bg-neutral-900 p-6 rounded-xl w-full max-w-md space-y-4 border border-white/10 shadow-2xl"
+                            >
+                                <div className="flex items-center justify-between">
+                                    <h3 className="text-xl font-bold">Download Music</h3>
+                                    <div className="flex items-center gap-2">
+                                        <button
+                                            onClick={() => setStatus(prev => ({ ...prev, minimized: true }))}
+                                            className="text-neutral-400 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors"
+                                        >
+                                            <ChevronDown className="w-5 h-5" />
+                                        </button>
+                                        <button onClick={() => setShowDownloadModal(false)} className="text-neutral-400 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors">
+                                            <X className="w-5 h-5" />
+                                        </button>
+                                    </div>
+                                </div>
 
-                        {status.state === 'downloading' || status.state === 'processing' ? (
-                            <div className="space-y-4">
-                                <div className="text-center font-bold text-primary animate-pulse">
-                                    {status.state === 'processing' ? 'Importing...' : 'Downloading...'}
-                                </div>
-                                <div className="w-full bg-neutral-800 rounded-full h-2">
-                                    <div className="bg-primary h-full transition-all" style={{ width: `${(status.progress / (status.total || 1)) * 100}%` }} />
-                                </div>
-                                <p className="text-center text-sm text-neutral-400">{status.message}</p>
-                            </div>
-                        ) : (
-                            <form onSubmit={handleDownload} className="space-y-4">
-                                <input
-                                    type="text"
-                                    placeholder="Paste Spotify/YouTube Link"
-                                    value={downloadUrl}
-                                    onChange={(e) => setDownloadUrl(e.target.value)}
-                                    className="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-white"
-                                />
-                                <button
-                                    type="submit"
-                                    disabled={!downloadUrl}
-                                    className="w-full bg-primary text-black font-bold py-3 rounded-full disabled:opacity-50"
-                                >
-                                    Start Download
-                                </button>
-                            </form>
-                        )}
-                    </div>
-                </div>
+                                {status.state === 'downloading' || status.state === 'processing' ? (
+                                    <div className="space-y-4">
+                                        <div className="text-center font-bold text-primary animate-pulse">
+                                            {status.state === 'processing' ? 'Importing...' : 'Downloading...'}
+                                        </div>
+                                        <div className="w-full bg-neutral-800 rounded-full h-2 overflow-hidden">
+                                            <div className="bg-primary h-full transition-all duration-500 ease-out" style={{ width: `${(status.progress / (status.total || 1)) * 100}%` }} />
+                                        </div>
+                                        <p className="text-center text-sm text-neutral-400">{status.message}</p>
+                                    </div>
+                                ) : (
+                                    <form onSubmit={handleDownload} className="space-y-4">
+                                        <input
+                                            type="text"
+                                            placeholder="Paste Spotify/YouTube Link"
+                                            value={downloadUrl}
+                                            onChange={(e) => setDownloadUrl(e.target.value)}
+                                            className="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                                        />
+                                        <button
+                                            type="submit"
+                                            disabled={!downloadUrl}
+                                            className="w-full bg-primary text-black font-bold py-3 rounded-full disabled:opacity-50 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                                        >
+                                            Start Download
+                                        </button>
+                                    </form>
+                                )}
+                            </motion.div>
+                        </motion.div>
+                    ) : (
+                        // Minimized Floating Widget
+                        <motion.div
+                            initial={{ y: 100, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            exit={{ y: 100, opacity: 0 }}
+                            className="fixed bottom-24 right-4 z-40 bg-neutral-800 border border-white/10 p-3 rounded-lg shadow-2xl flex items-center gap-3 cursor-pointer"
+                            onClick={() => setStatus(prev => ({ ...prev, minimized: false }))}
+                        >
+                            <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                            <span className="text-sm font-medium text-white">Downloading...</span>
+                            <span className="text-xs text-neutral-400">{Math.round((status.progress / (status.total || 1)) * 100)}%</span>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             )}
         </div>
     );
